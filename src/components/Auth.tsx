@@ -1,11 +1,13 @@
 interface AuthProps {
   user?: {
     uid: string;
-    name: string;
+    displayName: string;
     email: string;
   };
-  onSignIn: () => void;
-  onSignOut: () => void;
+  //eslint-disable-next-line @typescript-eslint/no-explicit-any
+  onSignIn: (...args: any[]) => unknown | Promise<unknown>;
+  //eslint-disable-next-line @typescript-eslint/no-explicit-any
+  onSignOut: (...args: any[]) => unknown | Promise<unknown>;
 }
 
 const Auth = ({ user, onSignIn, onSignOut }: AuthProps) => {
@@ -23,7 +25,7 @@ const Auth = ({ user, onSignIn, onSignOut }: AuthProps) => {
 
   return (
     <div className='flex items-center gap-4'>
-      <h2 className='text-2xl font-semibold text-gray-800 dark:text-gray-100'>{`Hi, ${user.name}`}</h2>
+      <h2 className='text-2xl font-semibold text-gray-800 dark:text-gray-100'>{`Hi, ${user.displayName}`}</h2>
       <button
         type='button'
         onClick={onSignOut}

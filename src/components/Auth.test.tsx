@@ -5,7 +5,7 @@ import Auth from './Auth';
 describe('Auth component', () => {
   const mockUser = {
     uid: '123',
-    name: 'user',
+    displayName: 'user',
     email: 'user@mail.com',
   };
   const onSignIn = jest.fn();
@@ -29,7 +29,7 @@ describe('Auth component', () => {
   it('should render the user name and a "Sign Out" button when a user is provided', () => {
     render(<Auth user={mockUser} onSignIn={onSignIn} onSignOut={onSignOut} />);
 
-    const elementWithName = screen.getByText(new RegExp(mockUser.name, 'i'));
+    const elementWithName = screen.getByText(new RegExp(mockUser.displayName, 'i'));
     const signOutButton = screen.getByRole('button', {
       name: /sign out/i,
     });
