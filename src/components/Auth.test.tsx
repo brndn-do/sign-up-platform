@@ -65,7 +65,7 @@ describe('Auth component', () => {
 
   it('should not have accessibility violations', async () => {
     const { container } = render(
-      <Auth user={mockUser} onSignIn={onSignIn} onSignOut={onSignOut} />
+      <Auth user={mockUser} onSignIn={onSignIn} onSignOut={onSignOut} />,
     );
     const results = await axe(container);
     expect(results).toHaveNoViolations();

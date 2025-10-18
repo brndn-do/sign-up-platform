@@ -6,27 +6,27 @@ This document outlines a detailed usage scenario for a sign-up platform tailored
 
 ### **Personas**
 
-*   **Brandon (The Organizer):** President of the Northwestern Archery Club. He needs to create and manage sign-ups for weekly practices, control access, and track attendance.
-*   **Alice (The Participant):** An active club member who wants to sign up for a practice slot.
-*   **Ben (The Waitlisted Participant):** Another club member who attempts to sign up after an event is already full.
+- **Brandon (The Organizer):** President of the Northwestern Archery Club. He needs to create and manage sign-ups for weekly practices, control access, and track attendance.
+- **Alice (The Participant):** An active club member who wants to sign up for a practice slot.
+- **Ben (The Waitlisted Participant):** Another club member who attempts to sign up after an event is already full.
 
 ---
 
 ### **The Organizer's Journey: Setting Up the Event**
 
 1.  **Event Creation:** Brandon, the club president, needs to release sign-ups for two upcoming practices:
-    *   Friday, 8:15 PM - 9:45 PM
-    *   Saturday, 7:15 PM - 8:45 PM
+    - Friday, 8:15 PM - 9:45 PM
+    - Saturday, 7:15 PM - 8:45 PM
 
 2.  **Setting Rules & Restrictions:** He logs into the platform and creates two new events. For each event, he configures the following rules:
-    *   **Capacity:** A cap of 20 spots for each practice.
-    *   **Waitlist & Time Limits:** An automated waitlist is enabled. He configures a dynamic time limit for responses: a 12-hour window for notifications sent overnight (9 PM - 9 AM) and a 1-hour window for notifications sent during the day. This gives sleeping members a fair chance to respond.
-    *   **Access Control:** Only users with a `@u.northwestern.edu` or `@northwestern.edu` email can sign up.
-    *   **Sign-up Limitation:** To manage initial demand, he sets a rule that each member can only sign up for **one** of the two practices for now.
-    *   **Custom Questions:** He adds a few questions that will be prompted on sign-up:
-        *   *Are you new to Archery?*
-        *   *Are you new to our club?*
-        *   *Have you signed the club's physical liability waiver?*
+    - **Capacity:** A cap of 20 spots for each practice.
+    - **Waitlist & Time Limits:** An automated waitlist is enabled. He configures a dynamic time limit for responses: a 12-hour window for notifications sent overnight (9 PM - 9 AM) and a 1-hour window for notifications sent during the day. This gives sleeping members a fair chance to respond.
+    - **Access Control:** Only users with a `@u.northwestern.edu` or `@northwestern.edu` email can sign up.
+    - **Sign-up Limitation:** To manage initial demand, he sets a rule that each member can only sign up for **one** of the two practices for now.
+    - **Custom Questions:** He adds a few questions that will be prompted on sign-up:
+      - _Are you new to Archery?_
+      - _Are you new to our club?_
+      - _Have you signed the club's physical liability waiver?_
 
 3.  **Admin Collaboration:** Brandon invites the other executive members of his club to the platform and grants them admin permissions, allowing them to help manage the events.
 

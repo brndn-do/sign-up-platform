@@ -4,11 +4,11 @@ This document outlines a tiered development plan for the sign-up platform, start
 
 ## Technology Stack for Prototyping
 
-*   **Framework:** Next.js
-*   **Authentication:** Firebase Authentication (with Google provider and domain restriction)
-*   **Database:** Firestore (for real-time data)
-*   **Backend Logic:** Cloud Functions for Firebase (especially for the waitlist system)
-*   **Styling:** Tailwind CSS
+- **Framework:** Next.js
+- **Authentication:** Firebase Authentication (with Google provider and domain restriction)
+- **Database:** Firestore (for real-time data)
+- **Backend Logic:** Cloud Functions for Firebase (especially for the waitlist system)
+- **Styling:** Tailwind CSS
 
 ---
 
@@ -17,6 +17,7 @@ This document outlines a tiered development plan for the sign-up platform, start
 The goal of this version is to get the fundamental sign-up and sign-off functionality working perfectly.
 
 ### Features:
+
 - **Live Roster:**
   - The list of attendees for an event is displayed in real-time.
   - When one user signs up, the list updates for everyone viewing the page without a refresh.
@@ -39,6 +40,7 @@ The goal of this version is to get the fundamental sign-up and sign-off function
 This version tackles the most complex and valuable feature from the scenario: the automated waitlist.
 
 ### Features:
+
 - **Join Waitlist:**
   - If an event is full, users see an option to "Join Waitlist".
 - **Automated Promotion:**
@@ -55,6 +57,7 @@ This version tackles the most complex and valuable feature from the scenario: th
 This version adds the remaining high-value features from the scenario.
 
 ### Features:
+
 - **Custom Sign-Up Questions:**
   - An organizer can define custom questions for an event (e.g., "Are you new to archery?").
   - Users are prompted to answer these questions during the sign-up process.
